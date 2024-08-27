@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="shortcut icon" href="img/computer.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="encriptar">
+            <textarea 
+                name="texto" 
+                id="texto" 
+                class="texto"
+                cols="30" 
+                rows="10" 
+                placeholder="Escribe tu texto en este segmento..."
+            ></textarea>
+        
+        <div class="terminos">
+            <p>Este encriptador trabajara unicamente con letras minusculas y sin acento.</p>
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">
+                Encriptar
+            </button>
+            <input 
+                type="button" 
+                class="btn-desencriptar" 
+                value="Desencriptar" 
+                onclick="desencriptar()"
+            />
+        </div>
+
+        <div class="encriptado">
+            <img src="img/computer.png" alt="computadora" id="computadora">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje"> Ningun mensaje fue encontrado</h2>
+                <p id="parrafo">Escribe el texto que requiera encriptacion o desencriptacion</p>
+                <!-- <textarea 
+                    name="mensaje" 
+                    id="mensaje" 
+                    class="mensaje"
+                    cols="30" 
+                    rows="10">
+                </textarea> -->
+
+            </div>
+
+        </div>
+        </div>
+        
+    </div>
+    
+</body>
+<script src="index.js"></script>
+
+</html>
